@@ -1,0 +1,25 @@
+$color-primary-light: #1f2833;
+$color-primary-dark: #0b0c10;
+
+body {
+  font-family: "Open Sans Condensed";
+  padding: 20px 40px;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 1),
+    rgba($color-primary-dark, 1)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+* {
+  box-sizing: border-box;
+}
