@@ -10,10 +10,10 @@ $color-primary: #66f1fc;
   .logo-container {
     height: 100%;
     width: 70px;
-    padding: 25px;
+    padding: 2px;
 
     .logo {
-      width: 40px;
+      width: 60px;
     }
   }
 
@@ -26,6 +26,7 @@ $color-primary: #66f1fc;
 
     .option {
       padding: 10px 15px;
+      margin-left: 10px;
       cursor: pointer;
     }
 
@@ -36,6 +37,7 @@ $color-primary: #66f1fc;
         text-decoration: none;
         padding: 0.2rem 1rem;
         border-radius: 10rem;
+        margin-right: 20px;
         transition: all 0.2s;
         display: flex;
         border: none;

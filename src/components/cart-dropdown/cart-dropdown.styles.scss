@@ -1,6 +1,6 @@
 $color-primary-light: #1f2833;
 $color-primary-dark: #0b0c10;
-
+$color-secondary-blue: #66f1fc;
 .cart-dropdown {
   position: absolute;
   width: 240px;
@@ -25,7 +25,7 @@ $color-primary-dark: #0b0c10;
 
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba($color-secondary-blue, 0.8);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
   .cart-items {

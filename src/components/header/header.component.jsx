@@ -4,14 +4,14 @@ import { connect } from 'react-redux'
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
-import { ReactComponent as Logo } from '../../assets/crown.svg';
+import  logo  from '../../assets/crown.png';
 
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
-      <Logo className='logo' />
+      <img src={logo} className='logo' alt="logo"/>
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
@@ -21,11 +21,11 @@ const Header = ({ currentUser, hidden }) => (
         CONTACT
       </Link>
       {currentUser ? (
-        <div className='btn btn--blue' onClick={() => auth.signOut()}>
+        <div className='option btn btn--blue' onClick={() => auth.signOut()}>
           SIGN OUT
         </div>
       ) : (
-        <Link className='btn btn--blue' to='/signin'>
+        <Link className='option btn btn--blue' to='/signin'>
           SIGN IN
         </Link>
       )}
